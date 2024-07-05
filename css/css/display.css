@@ -1,0 +1,66 @@
+#tableBlock{
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    background-color:aliceblue;
+}
+.block{
+    display: block;
+    background-color: aquamarine;
+    width: 200px;
+    margin: 5px;
+}
+
+#tableInline{
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    border-collapse: collapse;
+    background-color:aliceblue;
+}
+.Inline{
+    display: inline;
+    background-color: aquamarine;
+    margin: 2px;
+}
+
+.tableGrow{
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    border-collapse: collapse;
+    background-color:aliceblue;
+    display: flex; 
+}
+.grow-1{
+    background-color: aquamarine;
+    flex-grow: 1;
+    margin: 2px;
+}
+.grow-2{
+    background-color: aqua;
+    flex-grow: 2;
+    margin: 2px;
+}
+
+#tableShrink{
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    border-collapse: collapse;
+    background-color:aliceblue;
+    display: flex;
+}
+
+.shrink1{
+    background-color: bisque;
+   flex-shrink: 1; 
+   margin: 2px;
+   width: 25%;
+}
+.shrink2{
+    background-color: rgb(238, 159, 61);
+    flex-shrink: 2; 
+    margin: 2px;
+    width: 50%;
+}

@@ -1,0 +1,44 @@
+html{
+    background-color: #D9D9D9;
+}
+#header{
+    background-color:skyblue;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px;   
+}
+h2{
+    margin-top: 2px;
+}
+h3{
+    margin-top: 2px;
+}
+.tableInfo{
+    margin-top: 10px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: gray;
+  }
+
+table{
+    width: 100%;
+}
+th{
+    background-color: green;
+    color: aliceblue;
+    text-align: center;
+}
+tr{
+    background-color:white;
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.tdRight{
+    text-align: right;
+}
+
+
+
