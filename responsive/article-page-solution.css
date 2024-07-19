@@ -1,66 +1,67 @@
-.navBar {
+/* nav bar */
+nav {
     background-color: #333;
     overflow: hidden;
-
+}
+nav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    float: left;
+    display: flex;
+    border-radius: 5%;
+}
+nav a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+nav a.active {
+    background-color: #333;
+    color: white;
+}
+nav h1{
+    color: white;
+    font-size: 45px;
+    margin-bottom: 15px;
 }
 
+/* body */
 body{
     margin: 0;
     background-color: #f2f2f2;
 }
 
-.navBar a {
-color: #f2f2f2;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 17px;
-
-float: left;
-display: flex;
-}
-
-.navBar a:hover {
-background-color: #7bddbb;
-color: black;
-}
-
-.navBar a.active {
-background-color: #04AA6D;
-color: white;
-}
-
-.navBar h1{
-    color: white;
-    font-size: 45px;
-}
-
+/* main */
 main{
     display: flex;
     flex-wrap: wrap;
     margin: 15px;
-    gap: 10px;
-
-
+    gap: 15px;
 }
+
+/* article */
 article{
     flex: 2 1 60%;
     box-shadow: 0px 0px 10px gray;
     padding: 10px;
 }
-
 article h2{
     font-size: 35px;
+    margin-bottom: 10px;
 }
 
-
+/* aside */
 aside{
     margin-left: 20px;
-    flex: 1 1 30%;
-    background-color: rgb(213, 213, 213);
-    padding: 1em;
+    flex: 1 0 30%;
+    background-color: rgb(202, 199, 199);
+    box-shadow: 0px 0px 10px rgb(87, 86, 86);
+    padding: 2%;
 }
 
+/* footer */
 footer {
     position: fixed;
     left: 0;
@@ -71,18 +72,20 @@ footer {
     text-align: center;
 }
 
-@media (width < 768px)  {
-    .navBar a{
+/* media */
+@media (width <= 768px)  {
+    nav a{
         float: none;
         flex-direction: row;
     }
     main {
-        display: flex;
         flex-direction: column;
     }
     aside{
-        padding: 0em;
+        display: inline;
+        inline-size: 300px;
+        padding: 2%;
+        margin-bottom: 10%;
     }
 
-    
 }
