@@ -1,0 +1,123 @@
+
+
+body{
+    margin: 0;
+    background-color: #f2f2f2;
+}
+header{
+    justify-content: center;
+}
+.navBar {
+    background-color: green;
+    overflow:auto;
+    
+}
+ul{
+    display: flex;
+    justify-content: center;
+}
+.navBar a {
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+/* float: left; */
+display: flex;
+}
+.navBar a:hover {
+background-color: #7bddbb;
+color: black;
+}
+.navBar a.active {
+background-color: #04AA6D;
+color: white;
+}
+.navBar h1{
+    color: white;
+    font-size: 45px;
+}
+
+.product{
+    text-align: left;
+    border:gray solid 1px;
+    background-color:white;
+    border-radius: 10px;
+
+}
+.product img {
+    width: 100%;
+}
+.product h2,p{
+    padding-left: 20px;
+}
+
+#hero{
+    align-content: center;
+    text-align: center;
+    width: auto;
+    height: 300px;
+    background-image: url("https://via.placeholder.com/1500x600");
+    background-position: 50% 50% ;
+}
+#hero h1{
+    color: rgb(39, 84, 40);
+    font-size: 30px;
+}
+#hero button{
+    background-color: rgb(39, 84, 40);
+    color: white;
+    border-radius: 5%;
+    padding: 1%;
+}
+
+
+#featured-products{
+
+    margin: 15%;
+    margin-top: 5px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ofp{
+    color: rgb(39, 84, 40);
+    font-size: large;
+    margin:  20px 0 0 15%;
+}
+
+@media screen and (max-width: 1023px)  {
+    .navBar a{
+        flex-direction: row;
+    }
+    #featured-products{
+        margin: 0 20px 0 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .ofp{
+        margin: 20px 0 0 20px;
+    }
+}
+
+@media only screen and (max-width: 767px)  {
+    .navBar a{
+        float: none;
+        flex-direction: column;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #featured-products{
+        margin: 0 20px 0 20px;
+        grid-template-columns: 1fr;
+    }
+    .ofp{
+        margin: 20px 0 0 20px;
+    }
+}
+
+
+
