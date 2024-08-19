@@ -1,0 +1,29 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 25px;
+    margin: 20px;
+
+}
+.grid-item{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color:azure;
+    border: solid black 1px;
+}
+
+@media ( 481px < width < 769px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+    }
+
+@media (  width < 481px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr  ;
+    }
+}
