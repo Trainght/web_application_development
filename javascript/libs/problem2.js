@@ -31,11 +31,7 @@ function displayStats(arry) {
         sum += numberInt; 
       } 
     avg = sum / arry.length ;
- 
-    if (arry.length == 0) {
-        alert("For the list that is empty, the average is 0, the minimum is 0, and the maximum is 0");
-    } else {
-        alert("For the list " + arry + ", the average is " + avg.toFixed(2) + ", the minimum is " + minimum + ", and the maximum is " + maximum);
-    }
+    
+    arry.length == 0 ? alert("For the list that is empty, the average is 0, the minimum is 0, and the maximum is 0") : alert("For the list " + arry + ", the average is " + avg.toFixed(2) + ", the minimum is " + minimum + ", and the maximum is " + maximum);
 
 }
