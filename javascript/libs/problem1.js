@@ -10,9 +10,7 @@ while (true) {
 showPrimes(getInput);
 
 function showPrimes(n) {
-    let arry = [], numberInt = 0;
-
-    // numberInt = parseInt(n);
+    let arry = [];
 
     for (let i=2; i<=n; i++){
         if(!isPrime(i)) continue;
