@@ -10,11 +10,11 @@
         fetch("strudent.json")
         .then((response) => {return response.json();})
         .then((data) => {
-            let list = document.createElement("li");
+            
             wclass = data.wclass;
             for (let person of wclass) {
-                document.getElementById("test").innerHTML 
-                += person.student["@attributes"].id + " " + "<b>" + person.student.name +"</b>" + " has skills " + person.student.skill + "<br/>" ;
+                document.getElementById("list").innerHTML 
+                += "<li>"+person.student["@attributes"].id + " " + "<b>" + person.student.name +"</b>" + " has skills " + "<i>" + person.student.skill +"</i>"+ "</li>" ;
             }
 
 
