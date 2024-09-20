@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JSON object Creation in JavaScript</h2>
+        <ol id="list" type="1">
+
+        </ol>
+        <p id="test"></p> 
+    <script>
+        fetch("strudent.json")
+        .then((response) => {return response.json();})
+        .then((data) => {
+            let list = document.createElement("li");
+            wclass = data.wclass;
+            for (let person of wclass) {
+                document.getElementById("test").innerHTML 
+                += person.student["@attributes"].id + " " + "<b>" + person.student.name +"</b>" + " has skills " + person.student.skill + "<br/>" ;
+            }
+
+
+        })
+        .catch((err)=> {
+
+        });
+    </script>
+    </body>
+
+</html>
