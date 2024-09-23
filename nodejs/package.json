@@ -3,6 +3,17 @@
   "dependencies": {
     "http": "^0.0.1-security",
     "inquirer": "^11.0.2"
-    
-  }
+  },
+  "name": "nathachai-1265-exercises",
+  "version": "1.0.0",
+  "main": "calculator.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "calculator": "node calculator.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+  
 }
