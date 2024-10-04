@@ -2,7 +2,7 @@ import * as React from "react";
 import './App.css';
 
 export  function GitHubRepoURL({url}){
-  return <h2><a href={url} target="blank_">My GitHub ropository</a></h2> 
+  return <h2><a href={url} target="blank_">GitHub reposity.</a></h2> 
 }
 export  function GitHubAvatar({url,size = 50}){
   return  <img 
