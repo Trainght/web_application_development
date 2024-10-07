@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Sample github repositories</h1>
+      <h1>Popular GitHub Repositories</h1>
       <h2>
         <ol>
           {getGit.map((user, index) => (
