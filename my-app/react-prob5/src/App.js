@@ -1,6 +1,6 @@
 import {GitHubInfo} from "./github_info.js"
 import {users} from "./users.js"
-import './App.css';
+
 
 
 
