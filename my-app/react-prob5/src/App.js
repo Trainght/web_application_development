@@ -5,14 +5,14 @@ import {users} from "./users.js"
 
 
 function App() {
-  const getGit = users.filter(user => user.followers >= 10000);
+  const Mostfollowers = users.filter(user => user.followers >= 10000);
 
   return (
     <div className="App">
       <h1>Popular GitHub Repositories</h1>
       <h2>
         <ol>
-          {getGit.map((user, index) => (
+          {Mostfollowers.map((user, index) => (
             <li key={index}>
               <GitHubInfo UserInfo={user}/>
             </li>
