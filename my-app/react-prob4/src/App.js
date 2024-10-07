@@ -6,11 +6,15 @@ function App() {
   return (
     <div className="App">
       <h1>Sample GitHub Repositories</h1>
-      <ol>
-        <GitHubInfo UserInfo={users[0]} />
-        <GitHubInfo UserInfo={users[1]} />
-        <GitHubInfo UserInfo={users[2]} />  
-      </ol>
+      <h2>
+
+        <ol>
+          <GitHubInfo UserInfo={users[0]} />
+          <GitHubInfo UserInfo={users[1]} />
+          <GitHubInfo UserInfo={users[2]} />  
+        </ol>
+
+      </h2>
     </div>
 
   );
